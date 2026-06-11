@@ -141,6 +141,10 @@ function App() {
       </header>
 
       <main className="app-shell">
+        <div className="ad-banner ad-banner-top" aria-label="Iklan atas">
+          <p>Iklan banner: ruang kosong ini dapat diisi dengan promosi atau sponsor tanpa menutup konten utama.</p>
+        </div>
+
         {view === 'home' && (
           <>
             <UploadArea
@@ -205,6 +209,11 @@ function App() {
             </div>
           </div>
         )}
+
+        <div className="ad-banner ad-banner-bottom" aria-label="Iklan bawah">
+          <p>Area iklan bawah: tampil di perangkat desktop dan mobile tanpa menghentikan alur pengguna.</p>
+        </div>
+
         <div className="visually-hidden" aria-hidden="true">
           <p>Comressin is a fast browser-based image compressor for JPEG, PNG, WebP, GIF, and SVG images. Compress images online, preview before download, and save optimized photos directly from your browser.</p>
           <p>Use ImgCompress to reduce JPEG size, shrink PNG files, convert to WebP, and download high-quality compressed images for social media, web pages, email, and mobile use.</p>

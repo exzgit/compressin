@@ -46,8 +46,8 @@ function DownloadButton({ disabled, onDownload, fileName }) {
       </button>
 
       {downloading && (
-        <div className="download-modal" role="status">
-          <div className="download-modal-inner">Sedang download... Tunggu {count}s</div>
+        <div className="download-status" role="status">
+          Sedang download... Tunggu {count}s
         </div>
       )}
 
