@@ -5,7 +5,7 @@ function QualitySlider({ quality, onQualityChange, estimatePercent, originalSize
   return (
     <div className="control-group">
       <label htmlFor="quality-slider">
-        Kualitas: <strong>{Math.round(quality * 100)}%</strong>
+        Quality: <strong>{Math.round(quality * 100)}%</strong>
       </label>
       <input
         id="quality-slider"
@@ -18,7 +18,7 @@ function QualitySlider({ quality, onQualityChange, estimatePercent, originalSize
         onChange={(event) => onQualityChange(parseFloat(event.target.value))}
       />
       <p className="estimate-text">
-        Estimasi — Sebelum: {originalSize ? formatSize(originalSize) : '—'} · Sesudah: {estimateAfterSize ? formatSize(estimateAfterSize) : '—'} ({estimatePercent}%)
+        Estimate — Before: {originalSize ? formatSize(originalSize) : '—'} · After: {estimateAfterSize ? formatSize(estimateAfterSize) : '—'} ({estimatePercent}%)
       </p>
     </div>
   )

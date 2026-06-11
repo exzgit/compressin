@@ -46,13 +46,13 @@ function ComparisonSlider({ beforeSrc, afterSrc }) {
   return (
     <div className="comparison-simple">
       <div className="comparison-panel before" style={panelStyle}>
-        <img ref={beforeRef} src={beforeSrc} alt="Sebelum" className="comparison-img" draggable={false} onLoad={() => onLoad('before')} />
-        <div className="comparison-label">Sebelum</div>
+        <img ref={beforeRef} src={beforeSrc} alt="Before" className="comparison-img" draggable={false} onLoad={() => onLoad('before')} />
+        <div className="comparison-label">Before</div>
       </div>
 
       <div className="comparison-panel after" style={panelStyle}>
-        <img ref={afterRef} src={afterSrc} alt="Sesudah" className="comparison-img" draggable={false} onLoad={() => onLoad('after')} />
-        <div className="comparison-label">Sesudah</div>
+        <img ref={afterRef} src={afterSrc} alt="After" className="comparison-img" draggable={false} onLoad={() => onLoad('after')} />
+        <div className="comparison-label">After</div>
       </div>
     </div>
   )

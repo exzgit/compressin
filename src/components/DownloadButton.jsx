@@ -42,12 +42,12 @@ function DownloadButton({ disabled, onDownload, fileName }) {
         onClick={handleClick}
         disabled={disabled || downloading}
       >
-        {downloading ? `Menyiapkan download... (${count}s)` : `Download ${fileName || 'compressed'}`}
+        {downloading ? `Preparing download... (${count}s)` : `Download ${fileName || 'compressed'}`}
       </button>
 
       {downloading && (
         <div className="download-status" role="status">
-          Sedang download... Tunggu {count}s
+          Downloading... Please wait {count}s
         </div>
       )}
 

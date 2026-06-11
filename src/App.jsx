@@ -75,12 +75,12 @@ function App() {
     if (!file) return
 
     if (!SUPPORTED_TYPES.includes(file.type)) {
-      setError('Format file tidak didukung. Pilih JPEG, PNG, WebP, GIF, atau SVG.')
+      setError('Unsupported file type. Please choose JPEG, PNG, WebP, GIF, or SVG.')
       return
     }
 
     if (file.size > MAX_UPLOAD_BYTES) {
-      setError('File terlalu besar. Maksimum 10 MB.')
+      setError('File is too large. Maximum 10 MB.')
       return
     }
 
@@ -89,7 +89,7 @@ function App() {
 
   const handleCompress = async () => {
     if (!originalFile) {
-      setError('Pilih gambar terlebih dahulu.')
+      setError('Please select an image first.')
       return
     }
 
@@ -141,8 +141,8 @@ function App() {
       </header>
 
       <main className="app-shell">
-        <div className="ad-banner ad-banner-top" aria-label="Iklan atas">
-          <p>Iklan banner: ruang kosong ini dapat diisi dengan promosi atau sponsor tanpa menutup konten utama.</p>
+        <div className="ad-banner ad-banner-top" aria-label="Top ad">
+          <p>Loading ads...</p>
         </div>
 
         {view === 'home' && (
@@ -160,7 +160,7 @@ function App() {
             {originalFile && (
               <div className="settings-panel">
                 <div className="control-group">
-                  <label htmlFor="output-format">Format hasil</label>
+                  <label htmlFor="output-format">Output format</label>
                   <select
                     id="output-format"
                     value={outputFormat}
@@ -186,7 +186,7 @@ function App() {
                   onClick={handleCompress}
                   disabled={loading}
                 >
-                  {loading ? 'Memproses...' : 'Compress'}
+                  {loading ? 'Processing...' : 'Compress'}
                 </button>
               </div>
             )}
@@ -196,7 +196,7 @@ function App() {
         {view === 'result' && compressedBlob && (
           <div className="result-panel">
             <div className="result-header">
-              <button type="button" className="back-button" onClick={() => setView('home')} aria-label="Kembali">
+              <button type="button" className="back-button" onClick={() => setView('home')} aria-label="Back">
                 <ArrowLeft size={18} />
               </button>
               <h2 className="result-title">Hasil Kompresi</h2>
@@ -210,8 +210,8 @@ function App() {
           </div>
         )}
 
-        <div className="ad-banner ad-banner-bottom" aria-label="Iklan bawah">
-          <p>Area iklan bawah: tampil di perangkat desktop dan mobile tanpa menghentikan alur pengguna.</p>
+        <div className="ad-banner ad-banner-bottom" aria-label="Bottom ad">
+          <p>Loading ads...</p>
         </div>
 
         <div className="visually-hidden" aria-hidden="true">

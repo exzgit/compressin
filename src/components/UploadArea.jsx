@@ -25,19 +25,19 @@ function UploadArea({ onFileSelect, error, disabled, previewSrc, onClear, fileNa
           <button type="button" className="upload-clear" onClick={onClear}>
             ×
           </button>
-          <img src={previewSrc} alt="Preview gambar" className="upload-preview-image" />
+          <img src={previewSrc} alt="Image preview" className="upload-preview-image" />
           <div className="upload-preview-meta">
             <span>{fileName}</span>
             <span>{fileSize}</span>
           </div>
           <label className="upload-change" htmlFor="image-upload">
-            Ganti gambar
+            Change image
           </label>
         </div>
       ) : (
         <label className="upload-label" htmlFor="image-upload">
-          <span>Upload gambar di sini</span>
-          <strong>atau seret file ke kotak ini</strong>
+          <span>Upload image here</span>
+          <strong>or drag file here</strong>
         </label>
       )}
 

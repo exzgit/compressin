@@ -16,15 +16,15 @@ function ResultInfo({ originalSize, compressedSize }) {
   return (
     <div className="result-info">
       <div>
-        <p className="info-label">Sebelum</p>
+        <p className="info-label">Before</p>
         <strong>{formatSize(originalSize)}</strong>
       </div>
       <div>
-        <p className="info-label">Sesudah</p>
+        <p className="info-label">After</p>
         <strong>{compressedSize ? formatSize(compressedSize) : '—'}</strong>
       </div>
       <div>
-        <p className="info-label">Pengurangan</p>
+        <p className="info-label">Reduction</p>
         <strong>{compressedSize ? percent : '—'}</strong>
       </div>
     </div>
