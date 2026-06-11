@@ -50,10 +50,6 @@ function DownloadButton({ disabled, onDownload, fileName }) {
           Downloading... Please wait {count}s
         </div>
       )}
-
-      <div className="ad-spot" aria-hidden>
-        {/* ad placeholder — Google Ads script should target this element */}
-      </div>
     </div>
   )
 }

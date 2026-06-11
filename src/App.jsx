@@ -141,10 +141,6 @@ function App() {
       </header>
 
       <main className="app-shell">
-        <div className="ad-banner ad-banner-top" aria-label="Top ad">
-          <p>Loading ads...</p>
-        </div>
-
         {view === 'home' && (
           <>
             <UploadArea
@@ -209,10 +205,6 @@ function App() {
             </div>
           </div>
         )}
-
-        <div className="ad-banner ad-banner-bottom" aria-label="Bottom ad">
-          <p>Loading ads...</p>
-        </div>
 
         <div className="visually-hidden" aria-hidden="true">
           <p>Comressin is a fast browser-based image compressor for JPEG, PNG, WebP, GIF, and SVG images. Compress images online, preview before download, and save optimized photos directly from your browser.</p>
