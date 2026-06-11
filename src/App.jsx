@@ -136,7 +136,7 @@ function App() {
       <header className="topbar">
         <div className="topbar-inner">
           <img src={Logo} alt="Logo" className="topbar-logo" />
-          <p className="topbar-name">ImgCompress</p>
+          <p className="topbar-name">Compressin</p>
         </div>
       </header>
 
@@ -206,7 +206,7 @@ function App() {
           </div>
         )}
         <div className="visually-hidden" aria-hidden="true">
-          <p>ImgCompress is a fast browser-based image compressor for JPEG, PNG, WebP, GIF, and SVG images. Compress images online, preview before download, and save optimized photos directly from your browser.</p>
+          <p>Comressin is a fast browser-based image compressor for JPEG, PNG, WebP, GIF, and SVG images. Compress images online, preview before download, and save optimized photos directly from your browser.</p>
           <p>Use ImgCompress to reduce JPEG size, shrink PNG files, convert to WebP, and download high-quality compressed images for social media, web pages, email, and mobile use.</p>
           <p>Compression is safe, and we do not store any user data. Privacy is protected throughout every compression process.</p>
         </div>

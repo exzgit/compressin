@@ -1,4 +1,4 @@
-# Image Compress Pro
+# Compressin
 
 A modern, browser-based image compression web app built with React and Vite.
 
