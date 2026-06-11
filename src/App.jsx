@@ -5,6 +5,7 @@ import DownloadButton from './components/DownloadButton'
 import QualitySlider from './components/QualitySlider'
 import ResultInfo from './components/ResultInfo'
 import UploadArea from './components/UploadArea'
+import AdBanner from './components/AdBanner'
 import { compressImage } from './utils/compressImage'
 import Logo from './assets/logo.png'
 import './App.css'
@@ -141,6 +142,8 @@ function App() {
       </header>
 
       <main className="app-shell">
+        <AdBanner slot="1234567890" format="horizontal" />
+
         {view === 'home' && (
           <>
             <UploadArea
@@ -205,6 +208,8 @@ function App() {
             </div>
           </div>
         )}
+
+        <AdBanner slot="9876543210" format="horizontal" />
 
         <div className="visually-hidden" aria-hidden="true">
           <p>Comressin is a fast browser-based image compressor for JPEG, PNG, WebP, GIF, and SVG images. Compress images online, preview before download, and save optimized photos directly from your browser.</p>
